@@ -26,7 +26,7 @@ def save_cover_letter(job,company,cover_letter):
             if yes_no =='n':
                 return
             elif yes_no =='y':
-                today_for_file = datetime.now().strftime("%Y%m%d")
+                today_for_file = datetime.now().strftime("%y%m%d")
                 suggested_name = "_".join([today_for_file, company, job])
                 print("Enter file name (default: {}), if file exist will be  will be replaced ".format(suggested_name))
                 selection = input("cover_letter >> ") or suggested_name
